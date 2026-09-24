@@ -1,80 +1,301 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="am">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="JTRAN Designs — branding, digital design and connected creative systems.">
-  <title>JTRAN Designs | Build Beyond the Ordinary</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="99vsa0ptJz7tUIZ0..." />
+    <title>JTRAN Designs | Professional Branding Agency</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Smooth Scrolling Configuration */
+        html { scroll-behavior: smooth; }
+        
+        /* Unified All-in-One Layout Theme */
+        :root {
+            --jtran-gold: #f9cd0e;
+            --ethiopia-green: #008751;
+            --ethiopia-red: #da251d;
+            --dark-bg: #111111;
+            --cream-bg: #fdfcf7;
+        }
+
+        /* Ethiopia National Accent Bar */
+        .cultural-banner {
+            width: 100%;
+            height: 6px;
+            background: linear-gradient(to right, var(--ethiopia-green) 33.3%, var(--jtran-gold) 33.3%, var(--jtran-gold) 66.6%, var(--ethiopia-red) 66.6%);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        /* Navigation Menu Fixes */
+        header {
+            background: #ffffff;
+            padding: 10px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: fixed;
+            top: 6px;
+            width: 90%;
+            left: 5%;
+            border-radius: 8px;
+            z-index: 999;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .jtran-logo-svg {
+            width: 45px;
+            height: 45px;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 600;
+            font-size: 15px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover { color: var(--ethiopia-green); }
+
+        /* Sections Grid */
+        section {
+            padding: 120px 10% 80px 10%;
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* Hero / Homepage Section */
+        #home {
+            background-color: #0d2c1d; /* Rich Dark Green Hero Accent */
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .hero-btn {
+            background-color: var(--jtran-gold);
+            color: #111;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 25px;
+            display: inline-block;
+            margin-top: 20px;
+            transition: transform 0.3s;
+        }
+        .hero-btn:hover { transform: scale(1.05); }
+
+        /* Secondary Grid Sections (Cream/White) */
+        #about, #portfolio { background-color: #ffffff; }
+        #services { background-color: var(--cream-bg); }
+
+        .grid-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .card {
+            flex: 1;
+            min-width: 250px;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            border-top: 4px solid var(--jtran-gold);
+        }
+
+        /* Portfolio Showcase */
+        .portfolio-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .portfolio-item {
+            background: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border: 1px solid #eee;
+            transition: transform 0.3s ease;
+        }
+        .portfolio-item:hover { transform: translateY(-5px); }
+        .portfolio-img-wrapper {
+            width: 100%;
+            height: 220px;
+            background: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .portfolio-info {
+            padding: 20px;
+            border-top: 4px solid var(--jtran-gold);
+        }
+
+        /* Interactive Payment Section */
+        #payment-section {
+            background-color: var(--cream-bg);
+            text-align: center;
+        }
+
+        .qr-display-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 800px;
+            margin: 40px auto 20px auto;
+        }
+
+        .qr-card {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid #eee;
+        }
+
+        .qr-card.cbe-theme { border-top: 5px solid #2a5298; }
+        .qr-card.tele-theme { border-top: 5px solid #00a4e4; }
+
+        .qr-image-container {
+            width: 100%;
+            max-width: 220px;
+            border-radius: 12px;
+            overflow: hidden;
+            margin: 15px 0;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .qr-image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .qr-card h3 {
+            font-size: 18px;
+            color: #222;
+            margin-bottom: 5px;
+        }
+
+        .qr-card p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .qr-card code {
+            font-family: monospace;
+            background: #f4f4f4;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .taplink-redirect-btn {
+            background-color: #28a745;
+            color: white;
+            padding: 15px 35px;
+            font-size: 16px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 30px;
+            display: inline-block;
+            margin-top: 30px;
+            box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+        .taplink-redirect-btn:hover {
+            transform: scale(1.02);
+            background-color: #218838;
+        }
+
+        /* Admin Footer */
+        footer {
+            background: var(--dark-bg);
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-<header class="site-header">
-  <div class="container nav">
-    <a class="brand" href="index.html" aria-label="JTRAN Designs home">
-      <img src="images/logo-3d.png" alt="JTRAN Designs logo" class="brand-logo">
-      <span>JTRAN DESIGNS</span>
-    </a>
-    <div class="nav-right">
-      <button class="lang-toggle" data-lang-toggle type="button" aria-label="Switch language">አማ</button>
-      <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-label="Open navigation">MENU</button>
-      <nav class="nav-links" data-nav-links>
-        <a href="index.html" data-i18n="nav.home">Home</a>
-        <a href="pages/about.html" data-i18n="nav.about">About</a>
-        <a href="pages/services.html" data-i18n="nav.services">Services</a>
-        <a href="pages/portfolio.html" data-i18n="nav.portfolio">Portfolio</a>
-        <a href="pages/payments.html" data-i18n="nav.payments">Payments</a>
-        <a href="pages/contact.html" data-i18n="nav.contact">Contact</a>
-      </nav>
-    </div>
-  </div>
-</header>
 
-<main>
-  <section class="hero">
-    <div class="container hero-grid">
-      <div>
-        <div class="eyebrow" data-i18n="home.eyebrow">Creative Design • Digital Systems</div>
-        <h1 data-i18n-html="home.title">BUILD YOUR <span>BRAND</span> BEYOND THE ORDINARY.</h1>
-        <p data-i18n="home.intro">JTRAN Designs creates clear visual identities, practical brand applications and digital experiences designed to connect businesses with people.</p>
-        <div class="hero-actions">
-          <a class="btn btn--primary" href="pages/portfolio.html" data-i18n="home.projects">VIEW PROJECTS →</a>
-          <a class="btn btn--outline" href="pages/contact.html" data-i18n="home.start">START A PROJECT</a>
+    <!-- Cultural Band Top Border -->
+    <div class="cultural-banner"></div>
+
+    <!-- Top Fixed Navigation Bar -->
+    <header>
+        <div class="logo-container">
+            <!-- Your Exact Red Monogram JTRAN Logo Injected via Inline SVG Vectors -->
+            <svg class="jtran-logo-svg" viewBox="0 0 100 100" fill="none" xmlns="http://w3.org">
+                <rect width="100" height="100" rx="14" fill="#ff0000"/>
+                <path d="M25 22 H65 C78 22 78 44 65 44 H40 V78 M40 44 L70 78" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M25 60 C 25 78 35 78 40 78" stroke="white" stroke-width="12" stroke-linecap="round"/>
+            </svg>
+            <strong style="font-size: 20px; color: #111; font-family: sans-serif; letter-spacing: 0.5px;">JTRAN <span style="color:var(--jtran-gold)">DESIGNS</span></strong>
         </div>
-      </div>
-      <aside class="hero-panel">
-        <div class="hero-panel__logo"><img src="images/logo-3d.png" alt="JTRAN Designs"></div>
-        <div class="eyebrow" data-i18n="home.phoenix">Project Phoenix</div>
-        <h2 data-i18n="home.connectTitle">Design that connects.</h2>
-        <p data-i18n="home.connectCopy">From identity systems and physical applications to websites and QR-powered experiences.</p>
-        <a class="text-link" href="https://taplink.io/id:014988848:a177" target="_blank" rel="noopener" data-i18n="home.qr">OPEN JTRAN QR HUB ↗</a>
-        <a class="text-link" href="pages/payments.html" data-i18n="home.payments">PAYMENTS →</a>
-      </aside>
-    </div>
-  </section>
+        <nav class="nav-links">
+            <a href="#home">ዋና ገጽ</a>
+            <a href="#about">ስለ እኛ</a>
+            <a href="#services">አገልግሎቶች</a>
+            <a href="#portfolio">ስራዎቻችን</a>
+            <a href="#payment-section" style="color: var(--ethiopia-red);">ክፍያ (Payments)</a>
+        </nav>
+    </header>
 
-  <section class="section">
-    <div class="container">
-      <div class="eyebrow" data-i18n="home.what">What we build</div>
-      <h2 class="section-title" data-i18n="home.touchpoints">ONE BRAND. MULTIPLE TOUCHPOINTS.</h2>
-      <p class="section-copy" data-i18n="home.foundation">The Phoenix foundation is built around consistency: every visual decision should work across print, digital and real-world applications.</p>
-      <div class="card-grid">
-        <article class="card"><div class="card__number">01 / BRAND IDENTITY</div><h3 data-i18n="home.identity">Identity Systems</h3><p data-i18n="home.identityCopy">Logos, typography and visual systems designed to stay recognizable everywhere.</p></article>
-        <article class="card"><div class="card__number">02 / APPLICATIONS</div><h3 data-i18n="home.practice">Brand in Practice</h3><p data-i18n="home.practiceCopy">Business materials, apparel, signage and promotional applications with a consistent look.</p></article>
-        <article class="card"><div class="card__number">03 / DIGITAL</div><h3 data-i18n="home.digital">Connected Experiences</h3><p data-i18n="home.digitalCopy">Web experiences and QR Hub concepts that connect physical branding to useful digital destinations.</p></article>
-      </div>
-    </div>
-  </section>
+    <!-- 1. Hero Landing Section -->
+    <section id="home">
+        <h1 style="font-size: 3.2rem; margin-bottom: 20px;">ብራንድዎን ከተለመደው በላይ ይገንቡ።</h1>
+        <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto; opacity: 0.9;">Professional Graphic Design, Logos, and Visual Corporate Ecosystems built from Addis Ababa to the world.</p>
+        <div>
+            <a href="#payment-section" class="hero-btn">OPEN JTRAN QR HUB ↗</a>
+        </div>
+    </section>
 
-  <section class="section section--light">
-    <div class="container">
-      <div class="eyebrow" data-i18n="home.real">Real project direction</div>
-      <h2 class="section-title" data-i18n="home.actual">BUILT AROUND ACTUAL WORK.</h2>
-      <p class="section-copy" data-i18n="home.workCopy">JTRAN's portfolio is built around real project concepts including JTRAN Garage, Habesha Traditional Kitchen, NRT Machinery, Sunrise Real Estate and the QR Hub.</p>
-      <a class="btn btn--dark" href="pages/portfolio.html" data-i18n="home.seeWork">SEE THE WORK →</a>
-    </div>
-  </section>
-</main>
+    <!-- 2. About Section -->
+    <section id="about">
+        <h2>ስለ JTRAN Designs</h2>
+        <p style="font-size: 1.1rem; line-height: 1.8; color: #555; max-width: 800px;"> We are a premium creative design studio physically launching out of the rapidly expanding <strong>Koye Feche</strong> community in Addis Ababa, Ethiopia. We partner with local ambitious retailers, startups, and established enterprises to transform raw commercial visions into striking graphic masterpieces.</p>
+    </section>
 
-<script src="js/main.js"></script>
-</body>
-</html>
+    <!-- 3. Services Grid Section -->
+    <section id="services">
+        <h2>የምንሰጣቸው አገልግሎቶች (Our Services)</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>💎 Logo & Brand Identity</h3>
+                <p>Complete custom logo kits, brand color systems, and corporate typography guidelines optimized for high-impact market entry.</p>
+            </div>
+            <div class="card">
+                <h3>🏪 Local Shop Launch Kit</h3>
+                <p>Tailor-made for new Koye Feche storefronts: large exterior banner print layouts, business cards, and customized payment placards.</p>
+            </div>
+            <div class="card">
+                <h3>📱 UI/UX & Digital Assets</h3>
+                <p>Sleek modern user interface templates for Ethiopian fintech startups, delivery mobile applications, and vector graphics solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Dynamic Portfolio Showcase Section -->
+    <section id="portfolio">
