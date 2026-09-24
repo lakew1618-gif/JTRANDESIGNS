@@ -10,25 +10,13 @@
         /* Smooth Scrolling Configuration */
         html { scroll-behavior: smooth; }
         
-        /* Unified All-in-One Layout Theme Variables */
+        /* Unified All-in-One Layout Theme */
         :root {
             --jtran-gold: #f9cd0e;
             --ethiopia-green: #008751;
             --ethiopia-red: #da251d;
             --dark-bg: #111111;
             --cream-bg: #fdfcf7;
-        }
-
-        /* --- GLOBAL BACKGROUND SETUP (HABESHA CULTURAL LAYER) --- */
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: var(--cream-bg);
-            /* Seamlessly pulls your ethiopia-background graphic file from your computer's local and GitHub folders */
-            background-image: url('css/ethiopia-background.css'), url('images/tibeb-pattern.png');
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: center;
         }
 
         /* Ethiopia National Accent Bar */
@@ -42,11 +30,9 @@
             z-index: 1000;
         }
 
-        /* Sticky White Navigation Menu Ribbon Header */
+        /* Navigation Menu Fixes */
         header {
-            background: rgba(255, 255, 255, 0.9);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
+            background: #ffffff;
             padding: 10px 5%;
             display: flex;
             justify-content: space-between;
@@ -58,7 +44,6 @@
             left: 5%;
             border-radius: 8px;
             z-index: 999;
-            border: 1px solid rgba(255,255,255,0.4);
         }
 
         .logo-container {
@@ -83,25 +68,18 @@
 
         .nav-links a:hover { color: var(--ethiopia-green); }
 
-        /* --- PREVAILING SOFT BLUR GLASSMORPHISM LAYOUT FOR SECTIONS --- */
+        /* Sections Grid */
         section {
-            padding: 140px 10% 80px 10%;
-            min-height: 100vh;
+            padding: 120px 10% 80px 10%;
+            min-height: 80vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            /* Applies a soft frosted glass layer over the background pattern per section */
-            background: rgba(253, 252, 247, 0.75);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(230, 225, 210, 0.4);
         }
 
-        /* Hero / Homepage Section (Keeps Your Deep Emerald Branding Sharp) */
+        /* Hero / Homepage Section */
         #home {
-            background: rgba(13, 44, 29, 0.88); /* Merges rich green styling transparently with the blur layer */
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
+            background-color: #0d2c1d; /* Rich Dark Green Hero Accent */
             color: #ffffff;
             text-align: center;
         }
@@ -115,15 +93,14 @@
             border-radius: 25px;
             display: inline-block;
             margin-top: 20px;
-            transition: transform 0.3s, box-shadow 0.3s;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
         }
-        .hero-btn:hover { 
-            transform: scale(1.05); 
-            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
-        }
+        .hero-btn:hover { transform: scale(1.05); }
 
-        /* Layout Grid Infrastructure */
+        /* Secondary Grid Sections (Cream/White) */
+        #about, #portfolio { background-color: #ffffff; }
+        #services { background-color: var(--cream-bg); }
+
         .grid-container {
             display: flex;
             gap: 20px;
@@ -134,15 +111,14 @@
         .card {
             flex: 1;
             min-width: 250px;
-            background: rgba(255, 255, 255, 0.9);
+            background: white;
             padding: 25px;
             border-radius: 12px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.03);
             border-top: 4px solid var(--jtran-gold);
-            border-left: 1px solid rgba(255,255,255,0.6);
         }
 
-        /* Portfolio Showcase Layout Grid */
+        /* Portfolio Showcase */
         .portfolio-gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -150,18 +126,18 @@
             margin-top: 30px;
         }
         .portfolio-item {
-            background: rgba(255, 255, 255, 0.9);
+            background: #ffffff;
             border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.04);
-            border: 1px solid rgba(255,255,255,0.7);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border: 1px solid #eee;
             transition: transform 0.3s ease;
         }
         .portfolio-item:hover { transform: translateY(-5px); }
         .portfolio-img-wrapper {
             width: 100%;
             height: 220px;
-            background: rgba(240, 240, 240, 0.6);
+            background: #f0f0f0;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -171,7 +147,12 @@
             border-top: 4px solid var(--jtran-gold);
         }
 
-        /* Localized QR Billing Placement Station */
+        /* Interactive Payment Section */
+        #payment-section {
+            background-color: var(--cream-bg);
+            text-align: center;
+        }
+
         .qr-display-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -181,14 +162,14 @@
         }
 
         .qr-card {
-            background: rgba(255, 255, 255, 0.95);
+            background: #ffffff;
             padding: 25px;
             border-radius: 16px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.05);
             display: flex;
             flex-direction: column;
             align-items: center;
-            border: 1px solid rgba(255,255,255,0.8);
+            border: 1px solid #eee;
         }
 
         .qr-card.cbe-theme { border-top: 5px solid #2a5298; }
@@ -200,7 +181,7 @@
             border-radius: 12px;
             overflow: hidden;
             margin: 15px 0;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
 
         .qr-image-container img {
@@ -209,9 +190,18 @@
             display: block;
         }
 
-        .qr-card h3 { font-size: 18px; color: #222; margin-bottom: 5px; }
-        .qr-card p { font-size: 14px; color: #666; margin-bottom: 10px; }
-        
+        .qr-card h3 {
+            font-size: 18px;
+            color: #222;
+            margin-bottom: 5px;
+        }
+
+        .qr-card p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
         .qr-card code {
             font-family: monospace;
             background: #f4f4f4;
@@ -240,24 +230,23 @@
             background-color: #218838;
         }
 
-        /* Dark Corporate Footer */
+        /* Admin Footer */
         footer {
             background: var(--dark-bg);
-            padding: 25px;
+            padding: 20px;
             text-align: center;
-            border-top: 3px solid var(--jtran-gold);
         }
     </style>
 </head>
 <body>
 
-    <!-- Ethiopia Top Banner Accent Ribbon -->
+    <!-- Cultural Band Top Border -->
     <div class="cultural-banner"></div>
 
-    <!-- Top Fixed Navigation Bar Layout -->
+    <!-- Top Fixed Navigation Bar -->
     <header>
         <div class="logo-container">
-            <!-- Inline Red SVG Monogram Logo Vector -->
+            <!-- Your Exact Red Monogram JTRAN Logo Injected via Inline SVG Vectors -->
             <svg class="jtran-logo-svg" viewBox="0 0 100 100" fill="none" xmlns="http://w3.org">
                 <rect width="100" height="100" rx="14" fill="#ff0000"/>
                 <path d="M25 22 H65 C78 22 78 44 65 44 H40 V78 M40 44 L70 78" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
@@ -276,13 +265,37 @@
 
     <!-- 1. Hero Landing Section -->
     <section id="home">
-        <h1 style="font-size: 3.2rem; margin-bottom: 20px; text-shadow: 0 4px 10px rgba(0,0,0,0.3);">ብራንድዎን ከተለመደው በላይ ይገንቡ።</h1>
-        <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto; opacity: 0.95; text-shadow: 0 2px 5px rgba(0,0,0,0.3);">Professional Graphic Design, Logos, and Visual Corporate Ecosystems built from Addis Ababa to the world.</p>
+        <h1 style="font-size: 3.2rem; margin-bottom: 20px;">ብራንድዎን ከተለመደው በላይ ይገንቡ።</h1>
+        <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto; opacity: 0.9;">Professional Graphic Design, Logos, and Visual Corporate Ecosystems built from Addis Ababa to the world.</p>
         <div>
             <a href="#payment-section" class="hero-btn">OPEN JTRAN QR HUB ↗</a>
         </div>
     </section>
 
-    <!-- 2. About Section Layout -->
+    <!-- 2. About Section -->
     <section id="about">
-        <h2 style="color: var(--dark-bg); font-weight: 800;">ስለ JTRAN Designs</h2>
+        <h2>ስለ JTRAN Designs</h2>
+        <p style="font-size: 1.1rem; line-height: 1.8; color: #555; max-width: 800px;"> We are a premium creative design studio physically launching out of the rapidly expanding <strong>Koye Feche</strong> community in Addis Ababa, Ethiopia. We partner with local ambitious retailers, startups, and established enterprises to transform raw commercial visions into striking graphic masterpieces.</p>
+    </section>
+
+    <!-- 3. Services Grid Section -->
+    <section id="services">
+        <h2>የምንሰጣቸው አገልግሎቶች (Our Services)</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>💎 Logo & Brand Identity</h3>
+                <p>Complete custom logo kits, brand color systems, and corporate typography guidelines optimized for high-impact market entry.</p>
+            </div>
+            <div class="card">
+                <h3>🏪 Local Shop Launch Kit</h3>
+                <p>Tailor-made for new Koye Feche storefronts: large exterior banner print layouts, business cards, and customized payment placards.</p>
+            </div>
+            <div class="card">
+                <h3>📱 UI/UX & Digital Assets</h3>
+                <p>Sleek modern user interface templates for Ethiopian fintech startups, delivery mobile applications, and vector graphics solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Dynamic Portfolio Showcase Section -->
+    <section id="portfolio">
