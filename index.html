@@ -133,6 +133,11 @@
             display: inline-block;
             margin-top: 20px;
             box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+            transition: transform 0.2s ease;
+        }
+        .taplink-redirect-btn:hover {
+            transform: scale(1.02);
+            background-color: #218838;
         }
 
         /* Admin Footer */
@@ -228,20 +233,19 @@
                 ⚠️ Instructions: Please settle your design contract retainer deposit via CBE or Telebirr app, snapshot your payment success dialogue window, then use our hub link below to submit.
             </p>
 
-            <!-- Redirect Link Back to Your Active Live Taplink Workspace -->
-            <a href="https://taplink.ws" target="_blank" class="taplink-redirect-btn">
+            <!-- Fixed Redirect Link -->
+            <a href="https://kawowayesusa.taplink.ws/" target="_blank" class="taplink-redirect-btn">
                 📤 SCAN QR & SUBMIT RECEIPT HERE 
             </a>
         </div>
     </section>
 
-    <!-- Direct GitHub Link Admin Access Footer -->
+    <!-- Admin Footer -->
     <footer>
         <a href="https://github.com" target="_blank" style="color: #444; font-size: 12px; text-decoration: none; font-family:sans-serif;">
             ⚙️ Direct GitHub Link Admin Access
         </a>
     </footer>
 
-    <script src="js/script.js"></script>
 </body>
 </html>
