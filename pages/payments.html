@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="JTRAN Designs — Telebirr and CBE payment information.">
+  <title>Payments | JTRAN Designs</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .payment-wrap{max-width:1000px;margin-inline:auto;text-align:center}
+    .payment-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem;align-items:start}
+    .payment-card{background:#fff;border:1px solid var(--jtran-gray-300);border-radius:var(--radius-md);padding:clamp(1.25rem,4vw,2.5rem);box-shadow:var(--shadow-sm)}
+    .payment-card h2{margin:.25rem 0 .75rem}
+    .payment-qr{display:block;width:min(100%,500px);max-height:680px;object-fit:contain;margin:1.5rem auto 1rem;border-radius:var(--radius-sm);box-shadow:var(--shadow-sm)}
+    .payment-name{font-size:1.15rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+    .payment-number{color:var(--jtran-gray-600);margin:.25rem 0 1.25rem}
+    .payment-note{max-width:55ch;margin:1rem auto 0;color:var(--jtran-gray-600)}
+    .payment-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2rem;text-align:left}
+    .payment-step{padding:1rem;background:var(--jtran-gray-100);border-radius:var(--radius-sm)}
+    .payment-step strong{display:block;color:var(--jtran-red);margin-bottom:.25rem}
+    .payment-method{font-size:.8rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--jtran-red)}
+    @media(max-width:800px){.payment-grid{grid-template-columns:1fr}}
+    @media(max-width:650px){.payment-steps{grid-template-columns:1fr}}
+  </style>
+</head>
+<body class="ethiopia-accent">
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../index.html" aria-label="JTRAN Designs home">
+      <img src="../images/logo-3d.png" alt="JTRAN Designs logo" class="brand-logo">
+      <span>JTRAN DESIGNS</span>
+    </a>
+    <div class="nav-right">
+      <button class="lang-toggle" data-lang-toggle type="button" aria-label="Switch language">አማ</button>
+      <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-label="Open navigation">MENU</button>
+      <nav class="nav-links" data-nav-links>
+        <a href="../index.html" data-i18n="nav.home">Home</a>
+        <a href="../pages/about.html" data-i18n="nav.about">About</a>
+        <a href="../pages/services.html" data-i18n="nav.services">Services</a>
+        <a href="../pages/portfolio.html" data-i18n="nav.portfolio">Portfolio</a>
+        <a href="../pages/payments.html" data-i18n="nav.payments">Payments</a>
+        <a href="../pages/contact.html" data-i18n="nav.contact">Contact</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <div class="eyebrow" data-i18n="payments.eyebrow">Payment Options</div>
+      <h1 class="section-title" data-i18n="payments.title">PAY JTRAN DESIGNS.</h1>
+      <p class="section-copy" data-i18n="payments.copy">Choose Telebirr or CBE Mobile Banking and scan the corresponding QR code to make your payment.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container payment-wrap">
+      <div class="payment-grid">
+        <div class="payment-card">
+          <div class="payment-method">Telebirr</div>
+          <h2 data-i18n="payments.telebirrTitle">PAY WITH TELEBIRR</h2>
+          <div class="payment-name">TIGIST</div>
+          <div class="payment-number">(********1100)</div>
+          <img class="payment-qr" src="../images/telebirr-qr.jpg" alt="Telebirr QR code for TIGIST, phone ending 1100">
+          <p class="payment-note" data-i18n="payments.telebirrNote">Open Telebirr, scan the QR code, enter the required amount and confirm the payment. Keep your transaction confirmation.</p>
+        </div>
+
+        <div class="payment-card">
+          <div class="payment-method">CBE Mobile Banking</div>
+          <h2 data-i18n="payments.cbeTitle">PAY WITH CBE</h2>
+          <div class="payment-name">CBE</div>
+          <div class="payment-number" data-i18n="payments.cbeAccount">Account ending 5898</div>
+          <img class="payment-qr" src="../images/cbe-qr.png" alt="CBE Mobile Banking payment QR code, account ending 5898">
+          <p class="payment-note" data-i18n="payments.cbeNote">Open CBE Mobile Banking, scan the QR code and complete the payment. Keep your transaction confirmation.</p>
+        </div>
+      </div>
+
+      <div class="payment-steps">
+        <div class="payment-step"><strong>01</strong><span data-i18n="payments.step1">Open the payment app.</span></div>
+        <div class="payment-step"><strong>02</strong><span data-i18n="payments.step2">Choose the matching QR code and scan it.</span></div>
+        <div class="payment-step"><strong>03</strong><span data-i18n="payments.step3">Confirm your payment and keep the receipt.</span></div>
+      </div>
+
+      <div style="margin-top:2rem"><a class="btn btn--dark" href="https://taplink.io/id:014988848:a177" target="_blank" rel="noopener" data-i18n="payments.backHub">BACK TO JTRAN QR HUB ↗</a></div>
+    </div>
+  </section>
+</main>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+@import url("./variables.css");
+@import url("./base.css");
+@import url("./components/navigation.css");
+@import url("./components/cards.css");
+@import url("./ethiopia-background.css");
+@import url("./home.css");
+@import url("./about.css");
+@import url("./services.css");
+@import url("./responsive.css");
+
+/* Phoenix Build 4.1 repair layer */
+body{overflow-x:hidden}
+.nav-right{display:flex;align-items:center;gap:1rem}
+.brand-logo{width:42px;height:42px;object-fit:contain;border-radius:8px}
+.lang-toggle{border:1px solid var(--jtran-gray-300);background:#fff;color:var(--jtran-black);border-radius:999px;padding:.42rem .7rem;font-weight:800;cursor:pointer}
+.nav-links{z-index:60}
+.text-link{display:inline-flex;margin-top:1rem;color:var(--jtran-red);font-weight:900;letter-spacing:.04em}
+.hero-panel__logo{width:86px;height:86px;margin-bottom:auto;display:grid;place-items:center}
+.hero-panel__logo img{width:86px;height:86px;object-fit:contain}
+.project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.project-card{padding:2rem;border:1px solid var(--jtran-gray-300);border-radius:var(--radius-md);background:#fff;box-shadow:var(--shadow-sm);min-height:250px;display:flex;flex-direction:column}
+.project-card span{color:var(--jtran-red);font-weight:900;letter-spacing:.12em}
+.project-card h2{margin:.6rem 0 .5rem}
+.project-card p{color:var(--jtran-gray-600);max-width:52ch}
+.project-card--feature{grid-column:1/-1;background:var(--jtran-black);color:#fff;border-color:#222}
+.project-card--feature p{color:#c7c7c7}
+.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:3rem}
+.contact-item{display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--jtran-gray-300)}
+.contact-item-icon{width:42px;height:42px;display:grid;place-items:center;background:var(--jtran-red);color:#fff;border-radius:10px;font-weight:900}
+.contact-item h4{margin:.1rem 0}.contact-item p{margin:.1rem 0;color:var(--jtran-gray-600)}
+.contact-form{padding:2rem;background:var(--jtran-gray-100);border-radius:var(--radius-md)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.form-group{display:flex;flex-direction:column;gap:.4rem;margin-bottom:1rem}
+.form-group input,.form-group textarea,.form-group select{width:100%;padding:.85rem 1rem;border:1px solid var(--jtran-gray-300);border-radius:var(--radius-sm);background:#fff;color:var(--jtran-black)}
+@media(max-width:760px){
+ .nav{min-height:68px}.brand-logo{width:38px;height:38px}
+ .nav-right{gap:.5rem}.project-grid,.contact-grid,.form-row{grid-template-columns:1fr}
+ .project-card--feature{grid-column:auto}.contact-form{padding:1.25rem}
+ .hero-grid{gap:2rem}
+}

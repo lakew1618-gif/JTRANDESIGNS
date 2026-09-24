@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="99vsa0ptJz7tUIZ0..." />
+    <title>JTRAN Designs | Professional Branding Agency</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Smooth Scrolling Configuration */
+        html { scroll-behavior: smooth; }
+        
+        /* Unified All-in-One Layout Theme */
+        :root {
+            --jtran-gold: #f9cd0e;
+            --ethiopia-green: #008751;
+            --ethiopia-red: #da251d;
+            --dark-bg: #111111;
+            --cream-bg: #fdfcf7;
+        }
+
+        /* Ethiopia National Accent Bar */
+        .cultural-banner {
+            width: 100%;
+            height: 6px;
+            background: linear-gradient(to right, var(--ethiopia-green) 33.3%, var(--jtran-gold) 33.3%, var(--jtran-gold) 66.6%, var(--ethiopia-red) 66.6%);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        /* Navigation Menu Fixes */
+        header {
+            background: #ffffff;
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: fixed;
+            top: 6px;
+            width: 90%;
+            left: 5%;
+            border-radius: 8px;
+            z-index: 999;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 600;
+            font-size: 15px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover { color: var(--ethiopia-green); }
+
+        /* Sections Grid */
+        section {
+            padding: 100px 10%;
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* Hero / Homepage Section (Matches your Green Layout) */
+        #home {
+            background-color: #0d2c1d; /* Rich Dark Green Hero Accent */
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .hero-btn {
+            background-color: var(--jtran-gold);
+            color: #111;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 25px;
+            display: inline-block;
+            margin-top: 20px;
+            transition: transform 0.3s;
+        }
+        .hero-btn:hover { transform: scale(1.05); }
+
+        /* Secondary Grid Sections (Cream/White) */
+        #about, #portfolio { background-color: #ffffff; }
+        #services { background-color: var(--cream-bg); }
+
+        .grid-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .card {
+            flex: 1;
+            min-width: 250px;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            border-top: 4px solid var(--jtran-gold);
+        }
+
+        /* Localized Payment Section */
+        #payment-section {
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .qr-billing-box {
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 40px;
+            border: 2px dashed #ccc;
+            border-radius: 16px;
+            background: var(--cream-bg);
+        }
+
+        .taplink-redirect-btn {
+            background-color: #28a745;
+            color: white;
+            padding: 15px 35px;
+            font-size: 16px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 30px;
+            display: inline-block;
+            margin-top: 20px;
+            box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+        }
+
+        /* Admin Footer */
+        footer {
+            background: var(--dark-bg);
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cultural Band Top Border -->
+    <div class="cultural-banner"></div>
+
+    <!-- Top Fixed Navigation Bar -->
+    <header>
+        <div class="logo">
+            <strong style="font-size: 20px; color: #111;">JTRAN <span style="color:var(--jtran-gold)">DESIGNS</span></strong>
+        </div>
+        <nav class="nav-links">
+            <a href="#home">ዋና ገጽ</a>
+            <a href="#about">ስለ እኛ</a>
+            <a href="#services">አገልግሎቶች</a>
+            <a href="#portfolio">ስራዎቻችን</a>
+            <a href="#payment-section" style="color: var(--ethiopia-red);">ክፍያ (Payments)</a>
+        </nav>
+    </header>
+
+    <!-- 1. Hero Landing Section -->
+    <section id="home">
+        <h1 style="font-size: 3.2rem; margin-bottom: 20px;">ብራንድዎን ከተለመደው በላይ ይገንቡ።</h1>
+        <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto; opacity: 0.9;">Professional Graphic Design, Logos, and Visual Corporate Ecosystems built from Addis Ababa to the world.</p>
+        <div>
+            <a href="#payment-section" class="hero-btn">OPEN JTRAN QR HUB ↗</a>
+        </div>
+    </section>
+
+    <!-- 2. About Section -->
+    <section id="about">
+        <h2>ስለ JTRAN Designs</h2>
+        <p style="font-size: 1.1rem; line-height: 1.8; color: #555; max-width: 800px;"> We are a premium creative design studio physically launching out of the rapidly expanding <strong>Koye Feche</strong> community in Addis Ababa, Ethiopia. We partner with local ambitious retailers, startups, and established enterprises to transform raw commercial visions into striking graphic masterpieces.</p>
+    </section>
+
+    <!-- 3. Services Grid Section -->
+    <section id="services">
+        <h2>የምንሰጣቸው አገልግሎቶች (Our Services)</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>💎 Logo & Brand Identity</h3>
+                <p>Complete custom logo kits, brand color systems, and corporate typography guidelines optimized for high-impact market entry.</p>
+            </div>
+            <div class="card">
+                <h3>🏪 Local Shop Launch Kit</h3>
+                <p>Tailor-made for new Koye Feche storefronts: large exterior banner print layouts, business cards, and customized payment placards.</p>
+            </div>
+            <div class="card">
+                <h3>📱 UI/UX & Digital Assets</h3>
+                <p>Sleek modern user interface templates for Ethiopian fintech startups, delivery mobile applications, and vector graphics solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Portfolio Section -->
+    <section id="portfolio">
+        <h2>ያከናወናቸው ስራዎች (Portfolio)</h2>
+        <p style="color: #666;">Our recent design case studies are currently compiling. Stay tuned to witness visual revolutions.</p>
+        <div class="grid-container">
+            <div class="card" style="border-top-color: var(--ethiopia-green); height: 150px; display:flex; align-items:center; justify-content:center; background:#fafafa;">
+                <span>📂 Project Phoenix (Coming Soon)</span>
+            </div>
+            <div class="card" style="border-top-color: var(--ethiopia-red); height: 150px; display:flex; align-items:center; justify-content:center; background:#fafafa;">
+                <span>📂 Habesha Modern Kitchen Layout</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Interactive Payment Station Section -->
+    <section id="payment-section">
+        <h2>💳 JTRAN Secure Billing Hub</h2>
+        <p style="color:#666; max-width:600px; margin: 0 auto;">Welcome to our direct local payment hub. We process all independent deposits using secure local networks.</p>
+        
+        <div class="qr-billing-box">
+            <h3 style="color:#111; margin-bottom:15px;">📱 Local Banking Details</h3>
+            <p style="font-size: 1.1rem; line-height: 2; text-align: left; max-width: 400px; margin: 0 auto;">
+                <strong>🏦 CBE Bank Account:</strong><br>
+                👉 JTRAN DESIGNS — <span style="font-family:monospace; background:#eee; padding:2px 6px; border-radius:4px;">1000XXXXXXXXX</span><br><br>
+                <strong>📱 Telebirr Merchant ID / Phone:</strong><br>
+                👉 JTRAN HUB — <span style="font-family:monospace; background:#eee; padding:2px 6px; border-radius:4px;">09XXXXXXXX</span>
+            </p>
+            
+            <p style="margin-top: 30px; font-size: 13px; color: #666; font-style: italic;">
+                ⚠️ Instructions: Please settle your design contract retainer deposit via CBE or Telebirr app, snapshot your payment success dialogue window, then use our hub link below to submit.
+            </p>
+
+            <!-- Redirect Link Back to Your Active Live Taplink Workspace -->
+            <a href="https://taplink.ws" target="_blank" class="taplink-redirect-btn">
+                📤 SCAN QR & SUBMIT RECEIPT HERE 
+            </a>
+        </div>
+    </section>
+
+    <!-- Direct GitHub Link Admin Access Footer -->
+    <footer>
+        <a href="https://github.com" target="_blank" style="color: #444; font-size: 12px; text-decoration: none; font-family:sans-serif;">
+            ⚙️ Direct GitHub Link Admin Access
+        </a>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

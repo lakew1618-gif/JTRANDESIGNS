@@ -1,0 +1,10 @@
+.card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 2rem; }
+.card {
+  background: var(--jtran-white); border: 1px solid var(--jtran-gray-300);
+  border-radius: var(--radius-md); padding: 1.5rem; box-shadow: var(--shadow-sm);
+}
+.card__number { color: var(--jtran-red); font-size: .8rem; font-weight: 900; letter-spacing: .12em; }
+.card h3 { margin: .65rem 0 .55rem; font-size: 1.3rem; }
+.card p { margin: 0; color: var(--jtran-gray-600); }
+
+@media (max-width: 850px) { .card-grid { grid-template-columns: 1fr; } }

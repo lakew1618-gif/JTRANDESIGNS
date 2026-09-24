@@ -1,0 +1,5 @@
+@media (max-width: 520px) {
+  .section { padding: 3.5rem 0; }
+  .hero h1 { font-size: clamp(3rem, 18vw, 5rem); }
+  .hero-actions .btn { width: 100%; }
+}

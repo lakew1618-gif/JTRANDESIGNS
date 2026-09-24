@@ -1,0 +1,40 @@
+/* JTRAN Ethiopian-inspired background treatment — visible but restrained. */
+body.ethiopia-accent{
+  position:relative;
+  isolation:isolate;
+  overflow-x:hidden;
+  background:linear-gradient(180deg, rgba(0,106,51,.10) 0 33.333%, rgba(252,209,22,.09) 33.333% 66.666%, rgba(218,37,29,.09) 66.666% 100%), var(--jtran-white);
+}
+body.ethiopia-accent::before{
+  content:""; position:fixed; inset:72px 0 0; z-index:-1; pointer-events:none;
+  background:
+    linear-gradient(90deg, rgba(0,106,51,.045) 0 33.333%, rgba(252,209,22,.035) 33.333% 66.666%, rgba(218,37,29,.045) 66.666% 100%);
+}
+body.ethiopia-accent::after{
+  content:""; position:fixed; width:420px; height:420px; border-radius:50%;
+  right:-180px; top:150px; border:2px solid rgba(218,37,29,.12);
+  box-shadow:0 0 0 28px rgba(252,209,22,.075), 0 0 0 56px rgba(0,106,51,.065);
+  z-index:-1; pointer-events:none;
+}
+/* Make the national colors unmistakable without overwhelming the JTRAN identity. */
+.site-header{border-top:4px solid transparent; border-image:linear-gradient(90deg,#006a33 0 33.333%,#fcd116 33.333% 66.666%,#da251d 66.666% 100%) 1;}
+.hero{
+  background:
+    linear-gradient(100deg, rgba(0,0,0,1) 0 55%, rgba(0,106,51,.16) 68%, rgba(252,209,22,.12) 82%, rgba(218,37,29,.16) 100%),
+    var(--jtran-black);
+}
+.hero::before{
+  content:""; position:absolute; left:0; right:0; top:0; height:5px;
+  background:linear-gradient(90deg,#006a33 0 33.333%,#fcd116 33.333% 66.666%,#da251d 66.666% 100%);
+  opacity:.95;
+}
+.hero::after{
+  border-color:rgba(255,255,255,.12);
+  box-shadow:0 0 0 26px rgba(0,106,51,.08), 0 0 0 52px rgba(252,209,22,.065), 0 0 0 78px rgba(218,37,29,.075);
+}
+body.ethiopia-accent .section:not(.section--light){background:rgba(255,255,255,.86);}
+body.ethiopia-accent .section--light{background:rgba(247,247,247,.88);}
+@media(max-width:760px){
+  body.ethiopia-accent::after{width:260px;height:260px;right:-130px;top:140px;}
+  .hero{background:linear-gradient(100deg,rgba(0,0,0,1) 0 48%,rgba(0,106,51,.14) 65%,rgba(252,209,22,.10) 82%,rgba(218,37,29,.14) 100%),var(--jtran-black);}
+}
