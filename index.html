@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="am">
-<!DOCTYPE html>
-<html lang="am">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -50,12 +48,6 @@
             border-radius: 8px;
             z-index: 999;
         }
-
-    <div class="logo-container">
-    <!-- Links to your official 3D production logo asset -->
-    <img src="./images/logo-3d.png" alt="JTRAN Designs Logo" class="jtran-logo-svg" style="width: 45px; height: 45px; object-fit: contain;">
-    <strong style="font-size: 20px; color: #111; font-family: sans-serif; letter-spacing: 0.5px;">JTRAN <span style="color:var(--jtran-gold)">DESIGNS</span></strong>
-</div>
 
         .jtran-logo-svg {
             width: 45px;
@@ -242,6 +234,7 @@
             text-align: center;
         }
     </style>
+    
     <!-- Progressive Web App Setup -->
     <link rel="manifest" href="./manifest.json">
     <meta name="theme-color" content="#0d2c1d">
@@ -251,8 +244,6 @@
     <link rel="icon" type="image/png" sizes="192x192" href="./images/logo-3d.png">
     <link rel="apple-touch-icon" href="./images/logo-3d.png">
     <link rel="shortcut icon" type="image/png" href="./images/logo-3d.png">
-
-    <script src="./app.js" defer></script>
 </head>
 
 <body>
@@ -263,25 +254,25 @@
     <!-- Top Fixed Navigation Bar -->
     <header>
         <div class="logo-container">
-          <div class="logo-container">
-    <!-- Links to your real production logo image asset from the repository folder -->
-    <img src="./images/icon-192.png" alt="JTRAN Designs Logo" class="jtran-logo-svg" style="width: 45px; height: 45px; object-fit: contain; border-radius: 6px;">
-    <strong style="font-size: 20px; color: #111; font-family: sans-serif; letter-spacing: 0.5px;">JTRAN <span style="color:var(--jtran-gold)">DESIGNS</span></strong>
-</div>
-
+            <!-- Official 3D Production Brand Logo -->
+            <img src="./images/logo-3d.png" alt="JTRAN Designs Logo" class="jtran-logo-svg" style="width: 45px; height: 45px; object-fit: contain;">
             <strong style="font-size: 20px; color: #111; font-family: sans-serif; letter-spacing: 0.5px;">JTRAN <span style="color:var(--jtran-gold)">DESIGNS</span></strong>
         </div>
-        <nav class="nav-links">
+        <nav class="nav-links" style="display: flex; align-items: center; gap: 20px;">
             <a href="#home">ዋና ገጽ</a>
             <a href="#about">ስለ እኛ</a>
             <a href="#services">አገልግሎቶች</a>
             <a href="#portfolio">ስራዎቻችን</a>
-            <a href="#payment-section" style="color: var(--ethiopia-red);">ክፍያ (Payments)</a>
+            <a href="#payment-section" style="color: var(--ethiopia-red); margin-right: 10px;">ክፍያ (Payments)</a>
+            
+            <!-- Language Switcher Button Option -->
+            <button id="langBtn" class="lang" style="cursor: pointer;">አማ</button>
         </nav>
     </header>
 
     <!-- 1. Hero Landing Section -->
     <section id="home">
+
         <h1 style="font-size: 3.2rem; margin-bottom: 20px;">ብራንድዎን ከተለመደው በላይ ይገንቡ።</h1>
         <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto; opacity: 0.9;">Professional Graphic Design, Logos, and Visual Corporate Ecosystems built from Addis Ababa to the world.</p>
         <div>
