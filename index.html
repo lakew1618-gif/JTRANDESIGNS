@@ -6,8 +6,8 @@
     <meta name="google-site-verification" content="99vsa0ptJz7tUIZ0..." />
     <title>JTRAN Designs | Professional Branding Agency</title>
     
-    <!-- Core UI Stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Core UI Stylesheet Navigation -->
+    <link rel="stylesheet" href="./css/style.css">
     
     <style>
         /* Smooth Scrolling Configuration */
@@ -65,20 +65,21 @@
 
         .nav-links a:hover { color: var(--ethiopia-green); }
 
-        /* Sections Grid */
+        /* Multi-Page Structural Screen Sections */
         section {
-            padding: 120px 10% 80px 10%;
-            min-height: 80vh;
+            padding: 140px 10% 80px 10%;
+            min-height: 85vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
 
-        /* Hero / Homepage Section */
+        /* Hero Landing Configurations */
         #home {
-            background-color: #0d2c1d; /* Rich Dark Green Hero Accent */
+            background: linear-gradient(145deg, #0e261b 0%, #111 58%, #161616 100%);
             color: #ffffff;
             text-align: center;
+            position: relative;
         }
 
         .hero-btn {
@@ -94,57 +95,7 @@
         }
         .hero-btn:hover { transform: scale(1.05); }
 
-        /* Secondary Grid Sections (Cream/White) */
-        #about, #portfolio { background-color: #ffffff; }
-        #services { background-color: var(--cream-bg); }
-
-        .grid-container {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            margin-top: 30px;
-        }
-
-        .card {
-            flex: 1;
-            min-width: 250px;
-            background: white;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
-            border-top: 4px solid var(--jtran-gold);
-        }
-
-        /* Portfolio Showcase */
-        .portfolio-gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-            margin-top: 30px;
-        }
-        .portfolio-item {
-            background: #ffffff;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            border: 1px solid #eee;
-            transition: transform 0.3s ease;
-        }
-        .portfolio-item:hover { transform: translateY(-5px); }
-        .portfolio-img-wrapper {
-            width: 100%;
-            height: 220px;
-            background: #f0f0f0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .portfolio-info {
-            padding: 20px;
-            border-top: 4px solid var(--jtran-gold);
-        }
-
-        /* Interactive Payment Section */
+        /* Interactive Payment Grid Components */
         #payment-section {
             background-color: var(--cream-bg);
             text-align: center;
@@ -174,11 +125,11 @@
 
         .qr-image-container {
             width: 100%;
-            max-width: 220px;
+            max-width: 240px;
             border-radius: 12px;
             overflow: hidden;
             margin: 15px 0;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 14px rgba(0,0,0,0.12);
         }
 
         .qr-image-container img {
@@ -188,21 +139,21 @@
         }
 
         .qr-card h3 {
-            font-size: 18px;
+            font-size: 20px;
             color: #222;
-            margin-bottom: 5px;
+            margin: 0 0 5px 0;
         }
 
         .qr-card p {
             font-size: 14px;
             color: #666;
-            margin-bottom: 10px;
+            margin: 0 0 10px 0;
         }
 
         .qr-card code {
             font-family: monospace;
             background: #f4f4f4;
-            padding: 4px 8px;
+            padding: 6px 12px;
             border-radius: 4px;
             font-size: 14px;
             font-weight: bold;
@@ -220,228 +171,85 @@
             display: inline-block;
             margin-top: 30px;
             box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
-            transition: transform 0.2s ease, background-color 0.2s ease;
+            transition: transform 0.2s ease;
         }
-        .taplink-redirect-btn:hover {
-            transform: scale(1.02);
-            background-color: #218838;
-        }
+        .taplink-redirect-btn:hover { transform: scale(1.02); }
 
-        /* Admin Footer */
+        /* Footer Element */
         footer {
             background: var(--dark-bg);
-            padding: 20px;
+            padding: 25px;
             text-align: center;
         }
     </style>
     
-    <!-- Progressive Web App Setup -->
+    <!-- Progressive Web App Settings Matrix -->
     <link rel="manifest" href="./manifest.json">
     <meta name="theme-color" content="#0d2c1d">
     <script src="./app.js" defer></script>
     
-    <!-- Automatic Favicon Redirect Shortcuts -->
+    <!-- Explicit Tab Icon Mapping Channels -->
     <link rel="icon" type="image/png" sizes="192x192" href="./images/logo-3d.png">
     <link rel="apple-touch-icon" href="./images/logo-3d.png">
     <link rel="shortcut icon" type="image/png" href="./images/logo-3d.png">
 </head>
-
 <body>
 
-    <!-- Cultural Band Top Border -->
+    <!-- Cultural Band Accent Border Line -->
     <div class="cultural-banner"></div>
 
-    <!-- Top Fixed Navigation Bar -->
-    <!-- Top Fixed Navigation Bar -->
+    <!-- Top Fixed Navigation Bar Layout -->
     <header>
         <div class="logo-container">
-            <!-- Official 3D Production Brand Logo -->
+            <!-- Official 3D Branding Graphic Asset -->
             <img src="./images/logo-3d.png" alt="JTRAN Designs Logo" class="jtran-logo-svg" style="width: 45px; height: 45px; object-fit: contain;">
             <strong style="font-size: 20px; color: #111; font-family: sans-serif; letter-spacing: 0.5px; margin-left: 10px;">JTRAN <span style="color:var(--jtran-gold)">DESIGNS</span></strong>
         </div>
         <nav class="nav-links" style="display: flex; align-items: center; gap: 20px;">
-            <a href="#home" data-en="Home page" data-am="ዋና ገጽ">Home page</a>
-            <a href="#about" data-en="about us" data-am="ስለ እኛ">about us</a>
-            <a href="#services" data-en="Services" data-am="አገልግሎቶች">Services</a>
-            <a href="#portfolio" data-en="Our works" data-am="ስራዎቻችን">Our works</a>
-            <a href="#payment-section" style="color: var(--ethiopia-red); margin-right: 10px;" data-en="Payments" data-am="ክክፍያ (Payments)">Payments</a>
+            <!-- Dedicated Multi-Page Navigation File Target Routing -->
+            <a href="./index.html" data-en="Home page" data-am="ዋና ገጽ">Home page</a>
+            <a href="./about.html" data-en="about us" data-am="ስለ እኛ">about us</a>
+            <a href="./services.html" data-en="Services" data-am="አገልግሎቶች">Services</a>
+            <a href="./portfolio.html" data-en="Our works" data-am="ስራዎቻችን">Our works</a>
+            <a href="#payment-section" style="color: var(--ethiopia-red); margin-right: 10px;" data-en="Payments Hub" data-am="ክፍያ (Payments)">Payments Hub</a>
             
-            <!-- Language Switcher Button Option -->
-            <button id="langBtn" class="lang" style="cursor: pointer;">አማ</button>
+            <!-- Localization Control Component Toggle -->
+            <button id="langBtn" class="lang" style="cursor: pointer; border: 1px solid #ddd; background: #fff; border-radius: 999px; padding: 6px 14px; font-weight: 800;">አማ</button>
         </nav>
     </header>
 
-
-     <!-- 1. Hero Landing Section -->
-    <section id="home" class="screen hero">
-        <div class="hero-orb"></div>
-        <p class="eyebrow" data-en="BRANDING AGENCY" data-am="የብራንዲንግ ኤጀንሲ">BRANDING AGENCY</p>
-        <h1 data-en="Build your brand beyond the norm." data-am="ብራንድዎን ከተለመደው በላይ ይገንቡ።">Build your brand beyond the norm.</h1>
-        <p class="lead" data-en="Professional Graphic Design, Logos, and Visual Corporate Ecosystems built from Addis Ababa to the world." data-am="ፕሮፌሽናል ግራፊክ ዲዛይን፣ ሎጎዎች እና የቪዥዋል ኮርፖሬት ሥርዓቶች ከአዲስ አበባ ወደ ዓለም የተገነቡ።">Professional Graphic Design, Logos, and Visual Corporate Ecosystems built from Addis Ababa to the world.</p>
-        <div class="actions">
-            <a href="#payment-section" class="primary" data-en="OPEN JTRAN QR HUB ↗" data-am="የክፍያ QR ማዕከል ይክፈቱ ↗">OPEN JTRAN QR HUB ↗</a>
-            <a href="#services" class="secondary" data-en="Our Services" data-am="አገልግሎቶቻችን">Our Services</a>
+    <!-- 1. Hero Landing Space -->
+    <section id="home">
+        <p style="font-size: 0.8rem; font-weight: 900; letter-spacing: 0.16em; color: var(--jtran-gold);" data-en="BRANDING AGENCY" data-am="የብራንዲንግ ኤጀንሲ">BRANDING AGENCY</p>
+        <h1 style="font-size: clamp(2.4rem, 8vw, 4.2rem); margin: 15px 0;" data-en="Build your brand beyond the norm." data-am="ብራንድዎን ከተለመደው በላይ ይገንቡ።">Build your brand beyond the norm.</h1>
+        <p style="font-size: 1.15rem; max-width: 650px; margin: 0 auto; color: #d9d9d9;" data-en="Professional Graphic Design, Logos, and Visual Corporate Ecosystems built from Addis Ababa to the world." data-am="ፕሮፌሽናል ግራፊክ ዲዛይን፣ ሎጎዎች እና የቪዥዋል ኮርፖሬት ሥርዓቶች ከአዲስ አበባ ወደ ዓለም የተገነቡ።">Professional Graphic Design, Logos, and Visual Corporate Ecosystems built from Addis Ababa to the world.</p>
+        <div style="margin-top: 30px; display: flex; gap: 15px; justify-content: center;">
+            <a href="#payment-section" class="hero-btn" data-en="OPEN JTRAN QR HUB ↗" data-am="የክፍያ QR ማዕከል ይክፈቱ ↗">OPEN JTRAN QR HUB ↗</a>
         </div>
     </section>
 
-    <!-- 2. About Section -->
-    <section id="about" class="screen">
-        <div class="section-head">
-            <p class="eyebrow" data-en="WHO WE ARE" data-am="እኛ ማን ነን">WHO WE ARE</p>
-            <h2 data-en="About JTRAN Designs" data-am="ስለ JTRAN ዲዛይን">About JTRAN Designs</h2>
+    <!-- 2. Integrated Active Payments & QR Code Section -->
+    <section id="payment-section">
+        <div style="text-align: center; margin-bottom: 20px;">
+            <p style="font-size: 0.75rem; font-weight: 900; letter-spacing: 0.15em; color: var(--ethiopia-green);" data-en="SECURE TRANSACTION" data-am="ደህንነቱ የተጠበቀ ክፍያ">SECURE TRANSACTION</p>
+            <h2 style="font-size: clamp(2rem, 6vw, 3rem); margin: 10px 0;" data-en="Integrated QR Hub" data-am="የተቀናጀ የQR ማዕከል">Integrated QR Hub</h2>
         </div>
-        <p class="muted" data-en="JTRAN Designs is a premier creative agency specialized in translating corporate visions into high-impact visual identities. We engineer logos, full corporate visual styles, and complete digital layouts that position your business for market leadership." data-am="JTRAN ዲዛይን የድርጅት ራዕዮችን ወደ ከፍተኛ ተፅእኖ የእይታ መገለጫዎች በመተርጎም ረገድ የተካነ ቀዳሚ የፈጠራ ኤጀንሲ ነው። ንግድዎን ለገበያ መሪነት የሚያዘጋጁ አርማዎችን፣ ሙሉ የድርጅት የእይታ ዘይቤዎችን እና የተሟሉ የዲጂታል አቀማመጦችን እንቀርጻለን።">JTRAN Designs is a premier creative agency specialized in translating corporate visions into high-impact visual identities. We engineer logos, full corporate visual styles, and complete digital layouts that position your business for market leadership.</p>
-    </section>
-
-    <!-- 3. Services Section -->
-    <section id="services" class="screen dark">
-        <div class="section-head">
-            <p class="eyebrow" data-en="OUR EXPERTISE" data-am="የሙያ ብቃታችን">OUR EXPERTISE</p>
-            <h2 data-en="What We Deliver" data-am="ምን እናቀርባለን">What We Deliver</h2>
-        </div>
-        <div class="cards">
-            <div class="card dark">
-                <h3 data-en="Corporate Branding" data-am="የድርጅት ብራንዲንግ">Corporate Branding</h3>
-                <p class="muted" data-en="Complete visual identities, style guides, and premium logo layouts configured for global expansion." data-am="ለአለም አቀፍ ዕድገት የተዋቀሩ የተሟሉ የእይታ መገለጫዎች፣ የቅጥ መመሪያዎች እና ዋና የአርማ አቀማመጦች።">Complete visual identities, style guides, and premium logo layouts configured for global expansion.</p>
-            </div>
-            <div class="card dark">
-                <h3 data-en="Digital & Print Media" data-am="ዲጂታል እና የህትመት ሚዲያ">Digital & Print Media</h3>
-                <p class="muted" data-en="High-fidelity marketing assets, packages, banners, and executive print products built to perform." data-am="ከፍተኛ ጥራት ያላቸው የግብይት ንብረቶች፣ ፓኬጆች፣ ባነሮች እና አስፈፃሚ የህትመት ውጤቶች ለስራ የተገነቡ።">High-fidelity marketing assets, packages, banners, and executive print products built to perform.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- 4. Portfolio Section -->
-    <section id="portfolio" class="screen">
-        <div class="section-head">
-            <p class="eyebrow" data-en="PROVEN WORK" data-am="የተረጋገጠ ስራ">PROVEN WORK</p>
-            <h2 data-en="Selected Projects" data-am="የተመረጡ ፕሮጀክቶች">Selected Projects</h2>
-        </div>
-        <div class="project-list">
-            <a href="#" class="project dark">
-                <div>
-                    <h4 style="margin:0 0 5px 0;">Ethio Telecom Campaign Rebrand</h4>
-                    <p class="muted" style="margin:0; font-size:0.85rem;">Visual Conceptual Directives</p>
-                </div>
-                <span data-en="View Project ↗" data-am="ስራውን ይመልከቱ ↗">View Project ↗</span>
-            </a>
-            <a href="#" class="project dark">
-                <div>
-                    <h4 style="margin:0 0 5px 0;">Zemen Bank Identity Suite</h4>
-                    <p class="muted" style="margin:0; font-size:0.85rem;">Corporate Layout Typography</p>
-                </div>
-                <span data-en="View Project ↗" data-am="ስራውን ይመልከቱ ↗">View Project ↗</span>
-            </a>
-        </div>
-    </section>
-
-    <!-- 5. Interactive Payments Section -->
-    <section id="payment-section" class="screen payment">
-        <div class="section-head">
-            <p class="eyebrow" data-en="SECURE TRANSACTION" data-am="ደህንነቱ የተጠበቀ ክፍያ">SECURE TRANSACTION</p>
-            <h2 data-en="Integrated QR Hub" data-am="የተቀናጀ የQR ማዕከል">Integrated QR Hub</h2>
-        </div>
+        
         <div class="qr-display-grid">
+            <!-- Commercial Bank of Ethiopia (CBE) Mobile Banking QR -->
             <div class="qr-card cbe-theme">
-                <h3>CBE Birr</h3>
-                <p data-en="Commercial Bank of Ethiopia" data-am="የኢትዮጵያ ንግድ ባንክ">Commercial Bank of Ethiopia</p>
+                <h3>Commercial Bank of Ethiopia</h3>
+                <p data-en="Mobile Banking Transfer Account" data-am="የሞባይል ባንኪንግ ማስተላለፊያ ሂሳብ">Mobile Banking Transfer Account</p>
                 <div class="qr-image-container">
-                    <img src="./images/logo-3d.png" alt="CBE QR Code Placeholder">
+                    <img src="./images/cbe-qr.png" alt="Commercial Bank of Ethiopia Mobile Banking QR Code">
                 </div>
-                <code>*889# Merchant Account</code>
+                <code>Account: 1*********5898</code>
             </div>
+
+            <!-- telebirr Mobile Payment QR Code -->
             <div class="qr-card tele-theme">
-                <h3>telebirr</h3>
-                <p data-en="Ethio Telecom Platform" data-am="የኢትዮ ቴሌኮም የክፍያ መድረክ">Ethio Telecom Platform</p>
+                <h3>telebirr (TIGIST)</h3>
+                <p data-en="Scan QR to receive phone profile details" data-am="የስልክ ቁጥር ዝርዝሮችን ለማግኘት QR ይቃኙ">Scan QR to receive phone profile details</p>
                 <div class="qr-image-container">
-                    <img src="./images/logo-3d.png" alt="Telebirr QR Code Placeholder">
+                    <img src="./images/telebirr-qr.png" alt="telebirr Mobile Wallet Profile QR Code">
                 </div>
-                <code>Merchant ID: 46272</code>
-            </div>
-        </div>
-        <a href="https://taplink.cc" class="taplink" target="_blank" data-en="Redirect to Official Taplink 🌐" data-am="ወደ ኦፊሴላዊ ታፕሊንክ ይሂዱ 🌐">Redirect to Official Taplink 🌐</a>
-    </section>
-
-    <!-- 6. Client Inquiry Form Section -->
-    <section id="contact" class="screen">
-        <div class="section-head">
-            <p class="eyebrow" data-en="GET IN TOUCH" data-am="ያግኙን">GET IN TOUCH</p>
-            <h2 data-en="Start Your Project" data-am="ፕሮጀክትዎን ይጀምሩ">Start Your Project</h2>
-        </div>
-        <form id="requestForm">
-            <label>
-                <span data-en="Your Full Name" data-am="ሙሉ ስምዎ">Your Full Name</span>
-                <input type="text" id="name" required placeholder="e.g., Almaz Kebede">
-            </label>
-            <label>
-                <span data-en="Select Required Service" data-am="የሚፈልጉትን አገልግሎት ይምረጡ">Select Required Service</span>
-                <select id="service">
-                    <option value="Logo Design">Logo & Visual Identity Package</option>
-                    <option value="Corporate Branding">Full Corporate Branding Ecosystem</option>
-                    <option value="Marketing Assets">Digital Marketing Assets</option>
-                </select>
-            </label>
-            <label>
-                <span data-en="Project Specifications" data-am="የፕሮጀክቱ ዝርዝር መግለጫ">Project Specifications</span>
-                <textarea id="details" rows="5" required placeholder="Describe your design goals..."></textarea>
-            </label>
-            <button type="submit" class="primary full" data-en="Send Request via Email" data-am="የንድፍ ጥያቄን በኢሜይል ይላኩ">Send Request via Email</button>
-            <p id="formNote" class="form-note"></p>
-        </form>
-    </section>
-
-    <!-- Admin Footer -->
-    <footer>
-        <p style="color:#fff; margin:0; font-size:0.9rem;">&copy; 2026 JTRAN Designs. All rights reserved. Addis Ababa, Ethiopia.</p>
-    </footer>
-
-    <!-- Bottom Navigation Bar for Mobile PWA Devices -->
-    <nav class="bottom-nav">
-        <a href="#home">🏠<span data-en="Home" data-am="ዋና ገጽ">Home</span></a>
-        <a href="#about">ℹ️<span data-en="About" data-am="ስለ እኛ">About</span></a>
-        <a href="#services">💼<span data-en="Services" data-am="አገልግሎቶች">Services</span></a>
-        <a href="#portfolio">🎨<span data-en="Works" data-am="ስራዎቻችን">Works</span></a>
-        <a href="#payment-section">💳<span data-en="Pay" data-am="ክፍያ">Pay</span></a>
-    </nav>
-
-</body>
-</html>
-
-</body>
-</html>
-
-
-        <h1 style="font-size: 3.2rem; margin-bottom: 20px;">ብራንድዎን ከተለመደው በላይ ይገንቡ።</h1>
-        <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto; opacity: 0.9;">Professional Graphic Design, Logos, and Visual Corporate Ecosystems built from Addis Ababa to the world.</p>
-        <div>
-            <a href="#payment-section" class="hero-btn">OPEN JTRAN QR HUB ↗</a>
-        </div>
-    </section>
-
-    <!-- 2. About Section -->
-    <section id="about">
-        <h2>ስለ JTRAN Designs</h2>
-        <p style="font-size: 1.1rem; line-height: 1.8; color: #555; max-width: 800px;"> We are a premium creative design studio physically launching out of the rapidly expanding <strong>Koye Feche</strong> community in Addis Ababa, Ethiopia. We partner with local ambitious retailers, startups, and established enterprises to transform raw commercial visions into striking graphic masterpieces.</p>
-    </section>
-
-    <!-- 3. Services Grid Section -->
-    <section id="services">
-        <h2>የምንሰጣቸው አገልግሎቶች (Our Services)</h2>
-        <div class="grid-container">
-            <div class="card">
-                <h3>💎 Logo & Brand Identity</h3>
-                <p>Complete custom logo kits, brand color systems, and corporate typography guidelines optimized for high-impact market entry.</p>
-            </div>
-            <div class="card">
-                <h3>🏪 Local Shop Launch Kit</h3>
-                <p>Tailor-made for new Koye Feche storefronts: large exterior banner print layouts, business cards, and customized payment placards.</p>
-            </div>
-            <div class="card">
-                <h3>📱 UI/UX & Digital Assets</h3>
-                <p>Sleek modern user interface templates for Ethiopian fintech startups, delivery mobile applications, and vector graphics solutions.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- 4. Dynamic Portfolio Showcase Section -->
-    <section id="portfolio">
