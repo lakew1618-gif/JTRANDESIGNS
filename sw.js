@@ -4,8 +4,9 @@ const ASSETS = [
   './index.html',
   './css/style.css',
   './manifest.json',
-  'images/logo-3d.png',
-  'images/logo-3d.png'
+  './images/logo-3d.png',
+  './images/icon-192.png',
+  './images/icon-512.png'
 ];
 
 // Installs and caches valid asset directories
