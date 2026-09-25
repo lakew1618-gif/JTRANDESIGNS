@@ -1,49 +1,144 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="am">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="JTRAN Designs — branding, digital design and connected creative systems.">
-  <title>Portfolio | JTRAN Designs</title>
-  <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Works | JTRAN Designs</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        html { scroll-behavior: smooth; }
+        :root {
+            --jtran-gold: #f9cd0e;
+            --ethiopia-green: #008751;
+            --ethiopia-red: #da251d;
+            --dark-bg: #111111;
+            --cream-bg: #fdfcf7;
+        }
+        .cultural-banner {
+            width: 100%;
+            height: 6px;
+            background: linear-gradient(to right, var(--ethiopia-green) 33.3%, var(--jtran-gold) 33.3%, var(--jtran-gold) 66.6%, var(--ethiopia-red) 66.6%);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        header {
+            background: #ffffff;
+            padding: 10px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: fixed;
+            top: 6px;
+            width: 90%;
+            left: 5%;
+            border-radius: 8px;
+            z-index: 999;
+        }
+        .logo-container { display: flex; align-items: center; }
+        .jtran-logo-svg { width: 45px; height: 45px; }
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 600;
+            font-size: 15px;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover { color: var(--ethiopia-green); }
+        
+        section {
+            padding: 140px 10% 80px 10%;
+            min-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #ffffff;
+        }
+        .project-list { display: grid; gap: 15px; margin-top: 25px; }
+        .project {
+            padding: 25px;
+            background: #111111;
+            border-radius: 14px;
+            color: #ffffff;
+            text-decoration: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.2s ease;
+        }
+        .project:hover { transform: translateY(-2px); }
+        .project span { font-size: 0.9rem; color: var(--jtran-gold); }
+        .muted { color: #aaa; margin: 5px 0 0 0; font-size: 0.85rem; }
+        footer {
+            background: var(--dark-bg);
+            padding: 25px;
+            text-align: center;
+        }
+    </style>
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#0d2c1d">
+    <script src="./app.js" defer></script>
+    <link rel="icon" type="image/png" sizes="192x192" href="./images/logo-3d.png">
+    <link rel="apple-touch-icon" href="./images/logo-3d.png">
+    <link rel="shortcut icon" type="image/png" href="./images/logo-3d.png">
 </head>
-<body class="ethiopia-accent">
-<header class="site-header">
-  <div class="container nav">
-    <a class="brand" href="../index.html" aria-label="JTRAN Designs home">
-      <img src="../images/logo-3d.png" alt="JTRAN Designs logo" class="brand-logo">
-      <span>JTRAN DESIGNS</span>
-    </a>
-    <div class="nav-right">
-      <button class="lang-toggle" data-lang-toggle type="button" aria-label="Switch language">አማ</button>
-      <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-label="Open navigation">MENU</button>
-      <nav class="nav-links" data-nav-links>
-        <a href="../index.html" data-i18n="nav.home">Home</a>
-        <a href="../pages/about.html" data-i18n="nav.about">About</a>
-        <a href="../pages/services.html" data-i18n="nav.services">Services</a>
-        <a href="../pages/portfolio.html" data-i18n="nav.portfolio">Portfolio</a>
-        <a href="../pages/payments.html" data-i18n="nav.payments">Payments</a>
-        <a href="../pages/contact.html" data-i18n="nav.contact">Contact</a>
-      </nav>
-    </div>
-  </div>
-</header>
+<body>
 
-<main>
-<section class="page-hero ethiopia-accent"><div class="container">
-  <div class="eyebrow" data-i18n="portfolio.eyebrow">Selected work</div>
-  <h1 class="section-title" data-i18n="portfolio.title">ACTUAL PROJECTS. PRACTICAL BRAND SYSTEMS.</h1>
-  <p class="section-copy" data-i18n="portfolio.copy">A growing selection of JTRAN work across identity, applications, digital design and connected brand experiences.</p>
-</div></section>
-<section class="section"><div class="container"><div class="project-grid">
-<article class="project-card"><span>01</span><h2>JTRAN Garage</h2><p data-i18n="portfolio.garage">Automotive identity concept with logo, apparel, vehicle and promotional applications.</p><a href="contact.html" class="text-link" data-i18n="portfolio.view">VIEW PROJECT →</a></article>
-<article class="project-card"><span>02</span><h2>Habesha Traditional Kitchen</h2><p data-i18n="portfolio.habesha">Restaurant identity direction with traditional visual character, menu and apparel applications.</p><a href="contact.html" class="text-link" data-i18n="portfolio.view">VIEW PROJECT →</a></article>
-<article class="project-card"><span>03</span><h2>NRT Machinery</h2><p data-i18n="portfolio.nrt">Industrial identity concept developed for machinery and heavy-equipment communication.</p><a href="contact.html" class="text-link" data-i18n="portfolio.view">VIEW PROJECT →</a></article>
-<article class="project-card"><span>04</span><h2>Sunrise Real Estate</h2><p data-i18n="portfolio.sunrise">Real-estate identity concept focused on trust, opportunity, growth and property marketing.</p><a href="contact.html" class="text-link" data-i18n="portfolio.view">VIEW PROJECT →</a></article>
-<article class="project-card project-card--feature"><span>05</span><h2>JTRAN QR Hub</h2><p data-i18n="portfolio.qr">A connected digital touchpoint linking website, portfolio, contact and other destinations through one dynamic QR experience.</p><a href="https://taplink.io/id:014988848:a177" target="_blank" rel="noopener" class="text-link" data-i18n="portfolio.openHub">OPEN LIVE QR HUB ↗</a></article>
-</div></div></section>
-</main>
+    <div class="cultural-banner"></div>
 
-<script src="../js/main.js"></script>
+    <header>
+        <div class="logo-container">
+            <img src="./images/logo-3d.png" alt="JTRAN Designs Logo" class="jtran-logo-svg" style="width: 45px; height: 45px; object-fit: contain;">
+            <strong style="font-size: 20px; color: #111; font-family: sans-serif; letter-spacing: 0.5px; margin-left: 10px;">JTRAN <span style="color:var(--jtran-gold)">DESIGNS</span></strong>
+        </div>
+        <nav class="nav-links" style="display: flex; align-items: center; gap: 20px;">
+            <a href="./index.html" data-en="Home page" data-am="ዋና ገጽ">Home page</a>
+            <a href="./about.html" data-en="about us" data-am="ስለ እኛ">about us</a>
+            <a href="./services.html" data-en="Services" data-am="አገልግሎቶች">Services</a>
+            <a href="./portfolio.html" data-en="Our works" data-am="ስራዎቻችን">Our works</a>
+            <a href="./index.html#payment-section" style="color: var(--ethiopia-red); margin-right: 10px;" data-en="Payments Hub" data-am="ክፍያ (Payments)">Payments Hub</a>
+            <button id="langBtn" class="lang" style="cursor: pointer; border: 1px solid #ddd; background: #fff; border-radius: 999px; padding: 6px 14px; font-weight: 800;">አማ</button>
+        </nav>
+    </header>
+
+    <section>
+        <div style="max-width: 800px; margin: 0 auto; width: 100%;">
+            <p style="font-size: 0.8rem; font-weight: 900; letter-spacing: 0.16em; color: var(--ethiopia-green);" data-en="PROVEN WORK" data-am="የተረጋገጠ ስራ">PROVEN WORK</p>
+            <h2 style="font-size: clamp(2rem, 6vw, 3rem); margin: 10px 0;" data-en="Selected Projects" data-am="የተመረጡ ፕሮጀክቶች">Selected Projects</h2>
+            
+            <div class="project-list">
+                <a href="#" class="project">
+                    <div>
+                        <h4 style="margin:0; font-size: 1.2rem;">Ethio Telecom Campaign Rebrand</h4>
+                        <p class="muted">Visual Conceptual Directives</p>
+                    </div>
+                    <span data-en="View Project ↗" data-am="ስራውን ይመልከቱ ↗">View Project ↗</span>
+                </a>
+                <a href="#" class="project">
+                    <div>
+                        <h4 style="margin:0; font-size: 1.2rem;">Zemen Bank Identity Suite</h4>
+                        <p class="muted">Corporate Layout Typography</p>
+                    </div>
+                    <span data-en="View Project ↗" data-am="ስራውን ይመልከቱ ↗">View Project ↗</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p style="color:#fff; margin:0; font-size:0.9rem;">&copy; 2026 JTRAN Designs. All rights reserved. Addis Ababa, Ethiopia.</p>
+    </footer>
+
+    <nav class="bottom-nav" style="position: fixed; bottom: 0; left: 0; right: 0; background: #fff; display: flex; justify-content: space-around; padding: 10px 0; border-top: 1px solid #eee; z-index: 1000;">
+        <a href="./index.html" style="text-decoration:none; color:#333; text-align:center; font-size:0.8rem;">🏠<div>Home</div></a>
+        <a href="./about.html" style="text-decoration:none; color:#333; text-align:center; font-size:0.8rem;">ℹ️<div>About</div></a>
+        <a href="./services.html" style="text-decoration:none; color:#333; text-align:center; font-size:0.8rem;">💼<div>Services</div></a>
+        <a href="./portfolio.html" style="text-decoration:none; color:#333; text-align:center; font-size:0.8rem;">🎨<div>Works</div></a>
+        <a href="./index.html#payment-section" style="text-decoration:none; color:#333; text-align:center; font-size:0.8rem;">💳<div>Pay</div></a>
+    </nav>
+
 </body>
 </html>
