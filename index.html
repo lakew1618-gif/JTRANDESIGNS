@@ -49,6 +49,11 @@
             z-index: 999;
         }
 
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
         .jtran-logo-svg {
             width: 45px;
             height: 45px;
@@ -208,9 +213,9 @@
         <nav class="nav-links" style="display: flex; align-items: center; gap: 20px;">
             <!-- Dedicated Multi-Page Navigation File Target Routing -->
             <a href="./index.html" data-en="Home page" data-am="ዋና ገጽ">Home page</a>
-            <a href="./about.html" data-en="about us" data-am="ስለ እኛ">about us</a>
-            <a href="./services.html" data-en="Services" data-am="አገልግሎቶች">Services</a>
-            <a href="./portfolio.html" data-en="Our works" data-am="ስራዎቻችን">Our works</a>
+            <a href="./pages/about.html" data-en="about us" data-am="ስለ እኛ">about us</a>
+            <a href="./pages/services.html" data-en="Services" data-am="አገልግሎቶች">Services</a>
+            <a href="./pages/portfolio.html" data-en="Our works" data-am="ስራዎቻችን">Our works</a>
             <a href="#payment-section" style="color: var(--ethiopia-red); margin-right: 10px;" data-en="Payments Hub" data-am="ክፍያ (Payments)">Payments Hub</a>
             
             <!-- Localization Control Component Toggle -->
@@ -234,6 +239,7 @@
             <p style="font-size: 0.75rem; font-weight: 900; letter-spacing: 0.15em; color: var(--ethiopia-green);" data-en="SECURE TRANSACTION" data-am="ደህንነቱ የተጠበቀ ክፍያ">SECURE TRANSACTION</p>
             <h2 style="font-size: clamp(2rem, 6vw, 3rem); margin: 10px 0;" data-en="Integrated QR Hub" data-am="የተቀናጀ የQR ማዕከል">Integrated QR Hub</h2>
         </div>
+
         <!-- Bilingual Payment Guide Banner -->
         <div style="max-width: 700px; margin: 0 auto 30px auto; background: #ffffff; padding: 20px; border-radius: 12px; border-left: 5px solid var(--jtran-gold); box-shadow: 0 4px 15px rgba(0,0,0,0.02); text-align: left;">
             <div style="margin-bottom: 15px;">
@@ -245,33 +251,3 @@
                     <strong>በሞባይል ላይ ከሆኑ፦</strong> የQR ኮዱን ስክሪንሾት (Screenshot) ያድርጉ። የባንክ ወይም የቴሌብር መተግበሪያዎን ከፍተው "Scan from Gallery" የሚለውን በመምረጥ ስክሪንሾቱን ያስገቡ።
                 </p>
             </div>
-            <hr style="border: 0; border-top: 1px dashed #eee; margin: 12px 0;">
-            <div>
-                <p style="margin: 0; font-size: 14px; line-height: 1.6; color: #555;">
-                    <strong>On Desktop:</strong> Open your CBE Birr or telebirr app on your phone, select <strong>Scan</strong>, and point your camera at the screen to instantly transfer.
-                </p>
-                <p style="margin: 5px 0 0 0; font-size: 14px; line-height: 1.6; color: #555;">
-                    <strong>On Mobile:</strong> Take a <strong>screenshot</strong> of the QR code. Open your banking or telebirr app, select <strong>Scan from Gallery</strong>, and upload the screenshot to complete your payment.
-                </p>
-            </div>
-        </div>
-
-        
-        <div class="qr-display-grid">
-            <!-- Commercial Bank of Ethiopia (CBE) Mobile Banking QR -->
-            <div class="qr-card cbe-theme">
-                <h3>Commercial Bank of Ethiopia</h3>
-                <p data-en="Mobile Banking Transfer Account" data-am="የሞባይል ባንኪንግ ማስተላለፊያ ሂሳብ">Mobile Banking Transfer Account</p>
-                <div class="qr-image-container">
-                    <img src="./images/cbe-qr.png" alt="Commercial Bank of Ethiopia Mobile Banking QR Code">
-                </div>
-                <code>Account: 1*********5898</code>
-            </div>
-
-            <!-- telebirr Mobile Payment QR Code -->
-            <div class="qr-card tele-theme">
-                <h3>telebirr (TIGIST)</h3>
-                <p data-en="Scan QR to receive phone profile details" data-am="የስልክ ቁጥር ዝርዝሮችን ለማግኘት QR ይቃኙ">Scan QR to receive phone profile details</p>
-                <div class="qr-image-container">
-                    <img src="./images/telebirr-qr.png" alt="telebirr Mobile Wallet Profile QR Code">
-                </div>
