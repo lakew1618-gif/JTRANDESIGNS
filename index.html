@@ -249,5 +249,30 @@
                 </p>
                 <p style="margin: 5px 0 0 0; font-size: 14px; line-height: 1.6; color: #444;">
                     <strong>በሞባይል ላይ ከሆኑ፦</strong> የQR ኮዱን ስክሪንሾት (Screenshot) ያድርጉ። የባንክ ወይም የቴሌብር መተግበሪያዎን ከፍተው "Scan from Gallery" የሚለውን በመምረጥ ስክሪንሾቱን ያስገቡ።
+                        <!-- Corrected QR Display Grid Container -->
+        <div class="qr-display-grid">
+            
+            <!-- 1. Commercial Bank of Ethiopia (CBE) Mobile Banking Card -->
+            <div class="qr-card cbe-theme">
+                <h3>Commercial Bank of Ethiopia</h3>
+                <p data-en="Mobile Banking Transfer Account" data-am="የሞባይል ባንኪንግ ማስተላለፊያ ሂሳብ">Mobile Banking Transfer Account</p>
+                <div class="qr-image-container">
+                    <img src="./images/cbe-qr.png" alt="Commercial Bank of Ethiopia Mobile Banking QR Code">
+                </div>
+                <code>Account: 1*******5898</code>
+            </div> <!-- Cleanly closes the CBE card container -->
+
+            <!-- 2. telebirr Mobile Payment Card -->
+            <div class="qr-card tele-theme">
+                <h3>telebirr (TIGIST)</h3>
+                <p data-en="Scan QR to receive phone profile details" data-am="የስልክ ቁጥር ዝርዝሮችን ለማግኘት QR ይቃኙ">Scan QR to receive phone profile details</p>
+                <div class="qr-image-container">
+                    <img src="./images/telebirr-qr.png" alt="telebirr Mobile Wallet Profile QR Code">
+                </div>
+                <code>Phone Profile: *******1100</code>
+            </div> <!-- Cleanly closes the telebirr card container -->
+
+        </div> <!-- Cleanly closes the main grid display wrapper container -->
+
                 </p>
             </div>
